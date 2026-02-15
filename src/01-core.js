@@ -559,7 +559,7 @@ class Volumes {
 
   async _performSave() {
     const data = this.exportFS(); // Synchronously gets the JSON string
-    const key = `kbVolumes_${this.persistenceNamespace}`;
+    const key = `kxVolumes_${this.persistenceNamespace}`;
 
     try {
       if (this.persistenceBackend === 'local') {
@@ -577,7 +577,7 @@ class Volumes {
   }
 
   async _performLoad() {
-    const key = `kbVolumes_${this.persistenceNamespace}`;
+    const key = `kxVolumes_${this.persistenceNamespace}`;
     let data;
 
     try {
@@ -598,7 +598,7 @@ class Volumes {
   }
 
   async _performClear() {
-    const key = `kbVolumes_${this.persistenceNamespace}`;
+    const key = `kxVolumes_${this.persistenceNamespace}`;
     try {
       if (this.persistenceBackend === 'local') {
         localStorage.removeItem(key);
@@ -611,12 +611,12 @@ class Volumes {
   }
 
   // --- IndexedDB Helpers ---
-  // DB Name: kbVolumes_DB, Store: store
+  // DB Name: kxVolumes_DB, Store: store
   _idbOp(mode, fn) {
     return new Promise((resolve, reject) => {
       if (typeof indexedDB === 'undefined') return reject('IndexedDB not supported');
       // Namespace the DB to avoid global collisions
-      const req = indexedDB.open('kbVolumes_DB', 1);
+      const req = indexedDB.open('kxVolumes_DB', 1);
       req.onupgradeneeded = e => {
         const db = e.target.result;
         if (!db.objectStoreNames.contains('store')) {
