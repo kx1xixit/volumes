@@ -12,8 +12,8 @@ Edit `src/01-core.js` and add a block definition to the `getInfo()` method:
 getInfo() {
   return {
     id: 'kxVolumes',
-    name: 'Volumes',
-    color1: '#3498db',
+    name: '${META.NAME}',
+    color1: '#00bf63',
     blocks: [
       {
         opcode: 'sayHello',
