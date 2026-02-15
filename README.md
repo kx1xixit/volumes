@@ -4,7 +4,7 @@ Volumes is a power user-oriented virtual file system extension for Scratch. It h
 
 ## Who is this for?
 
-Volumes is for users who wish to create an operating system in Scratch and who want to add a file system to it. Volumes provides an easy-to-use solution for this, in opposition to rxFS which is jankily built.
+Volumes is for users who wish to create an operating system in Scratch and who want to add a file system to it. Volumes provides a stable, feature-rich solution designed with performance and ease of use in mind.
 
 ## Key features
 
