@@ -1784,7 +1784,7 @@ class Volumes {
     this._internalClean();
 
     try {
-      if (this.getVersion() !== '1.0.0') throw new Error('Version mismatch');
+      if (!this.getVersion().startsWith('1.')) throw new Error('Version mismatch');
 
       // 1. Basic Lifecycle
       this.fsManage({ ACTION: 'create', STR: '/test.txt', STR2: '' });
