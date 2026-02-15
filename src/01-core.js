@@ -23,7 +23,7 @@ const defaultPerms = {
 const META = {
   VERSION: '1.0.0',
   NAME: 'Volumes',
-  AUTHOR: 'Kane Boswell',
+  AUTHOR: 'kx1xixit',
   MAX_FILES: 10000, // Hard limit to prevent browser crashes
 };
 
@@ -75,8 +75,8 @@ class Volumes {
 
   getInfo() {
     return {
-      id: 'kbVolumes',
-      name: `${META.NAME} (v${META.VERSION})`,
+      id: 'kxVolumes',
+      name: `${META.NAME}`,
       color1: '#00bf63',
       color2: '#00a355',
       color3: '#006836',
