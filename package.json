@@ -1,0 +1,31 @@
+{
+  "type": "module",
+  "name": "turbowarp-extension-template",
+  "version": "1.0.0",
+  "description": "A template for TurboWarp/Scratch extensions with CI/CD workflows",
+  "main": "build/extension.js",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "watch": "node scripts/build.js --watch",
+    "lint": "eslint src/",
+    "format": "prettier --write src/",
+    "spellcheck": "cspell",
+    "fullstack": "npm run format && npm run lint && npm run spellcheck && npm run build"
+  },
+  "keywords": [
+    "turbowarp",
+    "scratch",
+    "extension"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^10.0.0",
+    "chokidar": "^5.0.0",
+    "cspell": "^9.6.4",
+    "eslint": "^10.0.0",
+    "globals": "^17.3.0",
+    "prettier": "^3.0.0",
+    "terser": "^5.46.0"
+  }
+}

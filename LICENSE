@@ -1,0 +1,80 @@
+@kx1xixit Ethical Copyleft (KXEC)
+Version KXEC-1.1
+
+Copyright (c) 2026 @kx1xixit
+
+
+PREAMBLE
+The intent of the @kx1xixit Ethical Copyleft (KXEC) is to promote software that remains permanently free, source-available, and safe. This license grants permission to use and modify the software, provided that it is never sold, never made closed-source, and never used for prohibited malicious acts.
+
+
+NOTE: This is an "Ethical Source-Available" license. It is NOT an Open Source Initiative (OSI) approved license because it contains field-of-use (ethical) and commercial restrictions. It is incompatible with the GNU GPL.
+
+DEFINITIONS
+"The Software" refers to the specific files, documents, or source code distributed under this License by the Licensor.
+"Source Code" refers to the preferred form of the work for making modifications (e.g., original scripts, text files).
+"Contributor" means any individual or entity that creates or modifies The Software.
+
+"Commercial Use" means (i) distribution of The Software to third parties in exchange for money or other consideration, or (ii) operation of The Software as the principal component of a paid product or paid service provided to third parties. Charging for ancillary services (hosting, support, customization) is permitted provided that the Source Code of the KXEC-covered files is made available to recipients at no charge and that no additional payment is required to obtain the rights granted by this License.
+"Larger Work" refers to a work that combines The Software with other separate files or software components not governed by this License.
+
+GRANT OF RIGHTS
+a. Use, reproduce, and execute The Software.
+b. Modify The Software and create derivative works.
+c. Distribute The Software and Your modifications, provided they remain under this License.
+
+CONDITIONS AND RESTRICTIONS
+
+3.1 Non-Commercial / "Free Forever" Rule
+You may NOT engage in Commercial Use of The Software.
+a. No Paywalls: You may not distribute The Software behind a paywall, within a subscription service, or as part of a paid application.
+b. Hosting & Support: You may charge for ancillary services such as hosting, installation, or technical support, provided that the Source Code of The Software itself remains freely available to the user without a separate fee.
+c. Donation Exception: You may accept voluntary donations, tips, or sponsorships, provided that such payments are optional and do not unlock exclusive rights, features, or access to The Software.
+
+3.2 Prohibited Acts (Ethical Use)
+You may not use The Software to knowingly engage in the following prohibited acts:
+a. Unauthorized Access: Gaining unauthorized access to computer systems, networks, or data (hacking).
+b. Malware Deployment: Creating or distributing ransomware, spyware, viruses, worms, or trojans.
+c. Denial of Service: Conducting denial-of-service (DoS) or distributed denial-of-service (DDoS) attacks.
+d. Surveillance: Conducting mass surveillance or data exfiltration without user consent.
+Exception for Research: These restrictions do not apply to defensive security research, penetration testing, or system administration conducted with explicit authorization from the target system's owner.
+
+
+3.3 The Source Requirement (Strong Copyleft)
+a. Source Availability: If You distribute The Software (or any modified version of it), You must make the Source Code publicly available and easily accessible.
+b. No Closed Source: You may not distribute The Software exclusively in binary, compiled, or obfuscated forms. You must provide the corresponding Source Code.
+c. Scope of Obligation: The obligations in Sections 3.3 and 3.4 apply only to KXEC-covered files and any modifications thereto. They do not require You to publish Source Code for unrelated third‑party components of a Larger Work that are not KXEC-covered.
+
+
+3.4 Network and SaaS Use (The "Website" Clause)
+If You run The Software as a service, You must publish any modifications to the KXEC-covered files to a public repository or provide a downloadable archive within thirty (30) days of deployment and include a permanent link to that source in the application UI.
+Acceptable Mechanisms: A "Source Code" link in the footer, a link in the "About" or "Credits" page, or a public repository URL provided in the documentation.
+
+3.5 Attribution
+You must retain all copyright, patent, trademark, and attribution notices present in the Source Code.
+
+PATENT LICENSE AND PROTECTION
+a. Grant: Each Contributor grants You a non-exclusive, worldwide, royalty-free patent license to make, use, import, and otherwise run, modify, and propagate the contents of its Contribution. (Note: The patent license does not override the license’s copyright-based restrictions on Commercial Use).
+b. Defensive Termination: If You initiate patent litigation against any entity (including a cross-claim or counterclaim in a lawsuit) alleging that The Software constitutes direct or contributory patent infringement, then any patent licenses granted to You under this License terminate as of the date such litigation is filed.
+
+COMPATIBILITY AND INCOMPATIBILITY
+
+a. File-Level Scope: This License is a file-level license. KXEC applies only to files it covers; combining with other-licensed files is permitted, but KXEC is incompatible with GPL-style relicensing and may be incompatible with other OSS licenses. Check compatibility case-by-case.
+b. GPL Incompatibility: Because this License imposes non-commercial and field-of-use restrictions, it is INCOMPATIBLE with the GNU General Public License (GPL). You may not link KXEC-licensed code with GPL-licensed code in a way that creates a single combined work.
+
+CONTRIBUTIONS
+
+Any Contribution You make to The Software shall be subject to this License. By submitting a Contribution, You represent and warrant that You have the right to grant the rights in this License and that the Contribution is not subject to another license that would conflict with KXEC. Project maintainers may require a Contributor License Agreement (CLA) or Developer Certificate of Origin (DCO) for acceptance of Contributions.
+
+TERMINATION AND CURE
+Your rights under this License terminate if You materially breach any term of this License and fail to cure such breach within thirty (30) days after receiving written notice describing the breach and the steps required to cure it. Written notice must be sent to the copyright holder at the contact email or address published in the repository (or, if none, to the repository maintainer's published contact). If You cure the breach within that period, rights under this License shall be reinstated prospectively.
+Enforcement Note: To report suspected license violations or request clarification, contact the copyright holder via the contact information provided in the repository.
+
+SEVERABILITY
+If any provision of this License is held to be unenforceable, invalid, or void in whole or in part, that provision will be deemed modified to the minimum extent necessary to make it enforceable while preserving its intent; the remaining provisions will remain in full force and effect.
+
+GOVERNING LAW AND JURISDICTION
+This License shall be governed by the laws of the State of California, USA, without reference to conflict of laws principles. Any dispute regarding this License shall be subject to the exclusive jurisdiction of the courts located in San Francisco County, California.
+
+DISCLAIMER OF WARRANTY
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
