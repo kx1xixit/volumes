@@ -33,7 +33,7 @@ getInfo() {
 
 ### 2. Implement the block method
 
-Add the method to Volumes's class:
+Add the method to Volumes' class:
 
 ```javascript
 sayHello(args) {

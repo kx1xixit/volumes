@@ -1,11 +1,11 @@
 # Quick start guide
 
-You can get Volumes's development environment up and ready within a few minutes.
+You can get Volumes' development environment up and ready within a few minutes.
 
 ## Prerequisites
 
 - Node.js 18+ ([Download](https://nodejs.org/))
-- TurboWarp ([Link](https://turbowarp.org/)) or any other Scratch mod
+- TurboWarp ([Link to editor](https://turbowarp.org/)) or any other Scratch mod
 
 ## Setup (One-time)
 
