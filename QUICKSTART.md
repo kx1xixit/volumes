@@ -23,7 +23,7 @@ npm run build
 
 ## Development workflow
 
-### Option A: One-time nuild (Simple)
+### Option A: One-time build (Simple)
 
 1. Edit files in `src/`
 2. Run `npm run build`
