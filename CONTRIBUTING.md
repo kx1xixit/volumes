@@ -118,7 +118,7 @@ Then define the menu:
 
 ```javascript
 menus: {
-  colors: ['red', 'green', 'blue'];
+  colors: ['red', 'green', 'blue']
 }
 ```
 
