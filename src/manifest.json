@@ -1,8 +1,8 @@
 {
-  "name": "My TurboWarp Extension",
-  "id": "myTurboWarpExtension",
-  "version": "1.0.0",
-  "description": "A custom extension for TurboWarp",
-  "author": "Your Name",
-  "license": "KBEC-1.0"
+  "name": "Volumes",
+  "id": "kxVolumes",
+  "version": "1.0.0-rc1",
+  "description": "Power-user oriented VFS for Scratch.",
+  "author": "kx1xixit",
+  "license": "KXEC-1.1"
 }

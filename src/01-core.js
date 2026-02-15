@@ -21,9 +21,9 @@ const defaultPerms = {
   */
 
 const META = {
-  VERSION: '1.0.0',
+  VERSION: '1.0.0-rc1',
   NAME: 'Volumes',
-  AUTHOR: 'Kane Boswell',
+  AUTHOR: 'kx1xixit',
   MAX_FILES: 10000, // Hard limit to prevent browser crashes
 };
 
@@ -75,8 +75,8 @@ class Volumes {
 
   getInfo() {
     return {
-      id: 'kbVolumes',
-      name: `${META.NAME} (v${META.VERSION})`,
+      id: 'kxVolumes',
+      name: `${META.NAME}`,
       color1: '#00bf63',
       color2: '#00a355',
       color3: '#006836',
@@ -559,7 +559,7 @@ class Volumes {
 
   async _performSave() {
     const data = this.exportFS(); // Synchronously gets the JSON string
-    const key = `kbVolumes_${this.persistenceNamespace}`;
+    const key = `kxVolumes_${this.persistenceNamespace}`;
 
     try {
       if (this.persistenceBackend === 'local') {
@@ -577,7 +577,7 @@ class Volumes {
   }
 
   async _performLoad() {
-    const key = `kbVolumes_${this.persistenceNamespace}`;
+    const key = `kxVolumes_${this.persistenceNamespace}`;
     let data;
 
     try {
@@ -598,7 +598,7 @@ class Volumes {
   }
 
   async _performClear() {
-    const key = `kbVolumes_${this.persistenceNamespace}`;
+    const key = `kxVolumes_${this.persistenceNamespace}`;
     try {
       if (this.persistenceBackend === 'local') {
         localStorage.removeItem(key);
@@ -611,12 +611,12 @@ class Volumes {
   }
 
   // --- IndexedDB Helpers ---
-  // DB Name: kbVolumes_DB, Store: store
+  // DB Name: kxVolumes_DB, Store: store
   _idbOp(mode, fn) {
     return new Promise((resolve, reject) => {
       if (typeof indexedDB === 'undefined') return reject('IndexedDB not supported');
       // Namespace the DB to avoid global collisions
-      const req = indexedDB.open('kbVolumes_DB', 1);
+      const req = indexedDB.open('kxVolumes_DB', 1);
       req.onupgradeneeded = e => {
         const db = e.target.result;
         if (!db.objectStoreNames.contains('store')) {
@@ -1784,7 +1784,7 @@ class Volumes {
     this._internalClean();
 
     try {
-      if (this.getVersion() !== '1.0.0') throw new Error('Version mismatch');
+      if (!this.getVersion().startsWith('1.')) throw new Error('Version mismatch');
 
       // 1. Basic Lifecycle
       this.fsManage({ ACTION: 'create', STR: '/test.txt', STR2: '' });

@@ -1,8 +1,8 @@
-# Contributing to Your TurboWarp Extension
+# Contributing to Volumes
 
-This guide explains how to add features and blocks to your TurboWarp extension.
+This guide explains how to add features and blocks to Volumes.
 
-## Adding Your First Block
+## Adding a new block
 
 ### 1. Define the Block in `getInfo()`
 
@@ -11,9 +11,9 @@ Edit `src/01-core.js` and add a block definition to the `getInfo()` method:
 ```javascript
 getInfo() {
   return {
-    id: 'myExtension',
-    name: 'My Extension',
-    color1: '#4CAF50',
+    id: 'kxVolumes',
+    name: '${META.NAME}',
+    color1: '#00bf63',
     blocks: [
       {
         opcode: 'sayHello',
@@ -31,9 +31,9 @@ getInfo() {
 }
 ```
 
-### 2. Implement the Block Method
+### 2. Implement the block method
 
-Add the method to your extension class:
+Add the method to Volumes' class:
 
 ```javascript
 sayHello(args) {
@@ -41,7 +41,7 @@ sayHello(args) {
 }
 ```
 
-### 3. Build and Test
+### 3. Build and test
 
 ```bash
 npm run build
@@ -49,7 +49,7 @@ npm run build
 
 Load the extension in TurboWarp and test the new block!
 
-## Block Types
+## Block types
 
 Scratch/TurboWarp supports different block types:
 
@@ -73,7 +73,7 @@ Example:
 }
 ```
 
-## Block Arguments
+## Block arguments
 
 Scratch supports multiple argument types:
 
@@ -118,22 +118,22 @@ Then define the menu:
 
 ```javascript
 menus: {
-  colors: ['red', 'green', 'blue'];
+  colors: ['red', 'green', 'blue']
 }
 ```
 
-## Helper Files
+## Helper files
 
-Organize your code across multiple files for better maintainability:
+While the build script supports helper files:
 
 - `src/01-core.js` - Main extension class with `getInfo()` and block methods
 - `src/02-helpers.js` - Utility functions
 - `src/03-constants.js` - Constants and configuration
 - etc.
 
-Files load in alphabetical order, so you can reference helpers in your core class.
+It is generally recommended to keep everything in `src/01-core.js` as that is how Volumes was made.
 
-## Code Quality
+## Code quality
 
 ### Run the linter
 
@@ -153,9 +153,9 @@ npm run format
 npm run lint -- --fix
 ```
 
-## Extension Properties
+## Extension properties
 
-### Color Scheme
+### Color scheme
 
 Set colors for your extension blocks:
 
@@ -191,9 +191,9 @@ getInfo() {
 }
 ```
 
-## Best Practices
+## Best practices
 
-### 1. Use Meaningful Names
+### 1. Use meaningful names
 
 ```javascript
 // Good
@@ -215,7 +215,7 @@ getInfo() {
 }
 ```
 
-### 2. Handle Errors Gracefully
+### 2. Handle errors gracefully
 
 ```javascript
 myBlock(args) {
@@ -229,7 +229,7 @@ myBlock(args) {
 }
 ```
 
-### 3. Use Type Casting
+### 3. Use type casting
 
 Scratch automatically converts arguments, but be explicit:
 
@@ -242,7 +242,7 @@ myBlock(args) {
 }
 ```
 
-### 4. Document Your Blocks
+### 4. Document your blocks
 
 Add comments explaining complex blocks:
 
@@ -265,24 +265,14 @@ distance(args) {
 
 ## Testing
 
-### Manual Testing
+### Manual testing
 
 1. Build: `npm run build`
 2. Load in TurboWarp
 3. Create test scripts with your blocks
 4. Verify results
 
-### Automated Testing
-
-Create test scripts to verify your logic works correctly:
-
-```bash
-npm run test
-```
-
-Edit the test section in `package.json` to run your tests.
-
-## Release Checklist
+## Release checklist
 
 Before releasing a new version:
 
