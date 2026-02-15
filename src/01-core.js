@@ -21,7 +21,7 @@ const defaultPerms = {
   */
 
 const META = {
-  VERSION: '1.0.0',
+  VERSION: '1.0.0-rc1',
   NAME: 'Volumes',
   AUTHOR: 'kx1xixit',
   MAX_FILES: 10000, // Hard limit to prevent browser crashes
