@@ -18,7 +18,7 @@ Volumes aims to improve upon existing solutions (like rxFS) by focusing on stabi
 
 ## I'm sold, how do I install it?
 
-Intalling Volumes to your TurboWarp project is easy:
+Installing Volumes to your TurboWarp project is easy:
 
 1. Open [TurboWarp](https://turbowarp.org/editor)
 2. Click the 'Add extension' button (the puzzle piece and the plus icon)
